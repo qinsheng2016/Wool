@@ -2,7 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.sqin.wool.mapper.CreditCardMapper">
+
+    <mapper namespace="com.sqin.wool.mapper.CreditCardMapper">
 
     <select id="getCreditCardList" resultType="CreditCard">
         select id, card_number as cardNumber, bank, type, credit_limit as creditLimit, currency from credit_card
